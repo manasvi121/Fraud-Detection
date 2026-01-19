@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fraud Detection Dashboard</h1>
+    <p>Machine Learning Based Transaction Fraud Analysis</p>
+</header>
+
+<section class="cards">
+    <div class="card">
+        <h2>Total Transactions</h2>
+        <p id="totalTx">6,362,620</p>
+    </div>
+    <div class="card">
+        <h2>Fraud Transactions</h2>
+        <p id="fraudTx">8,213</p>
+    </div>
+    <div class="card">
+        <h2>Fraud Rate</h2>
+        <p id="fraudRate">0.13%</p>
+    </div>
+</section>
+
+<section class="chart-section">
+    <h2>Fraud by Transaction Type</h2>
+    <canvas id="fraudChart"></canvas>
+</section>
+
+<section class="insights">
+    <h2>Key Fraud Insights</h2>
+    <ul>
+        <li>Fraud mainly occurs in TRANSFER and CASH_OUT transactions</li>
+        <li>High transaction amounts are strong fraud indicators</li>
+        <li>Sudden balance depletion often signals fraud</li>
+        <li>Random Forest model achieved high ROC-AUC</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Built by Manasvi Khanna | Fraud Detection ML Project</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
